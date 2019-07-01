@@ -114,7 +114,7 @@ export default class Screen2 extends Component {
           <div className='elButton' style={style_elButton_outer}>
             <Button className='actionFont' style={style_elButton}  color="accent" onClick={this.onClick_elButton} >
               {this.props.locStrings.screen2_button_667176}
-            </Button>
+            </Button> 
           
           </div>
           
