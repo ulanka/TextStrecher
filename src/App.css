@@ -356,7 +356,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .StartScreen > .background > .state0_elBackground {
+  .StartScreen > .background > .elBackground {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -365,7 +365,7 @@
     height: 100%;
   }
 @media (min-width: 568px) {
-  .StartScreen > .background > .state0_elBackground {
+  .StartScreen > .background > .elBackground {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -374,7 +374,7 @@
   }
 }
 @media (min-width: 768px) {
-  .StartScreen > .background > .state0_elBackground {
+  .StartScreen > .background > .elBackground {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -383,7 +383,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .StartScreen > .background > .state0_elBackground {
+  .StartScreen > .background > .elBackground {
     left: 0px;
     right: 0px;
     top: 0px;
@@ -394,68 +394,68 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .StartScreen > .layoutFlow > .state0_elTextarea {
+  .StartScreen > .layoutFlow > .elTextarea {
     position: relative;
     margin-top: 0px;
     margin-left: 4px;
     margin-right: 4px;
     width: calc(100.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .state0_elTextarea > * { 
+  .StartScreen > .layoutFlow > .elTextarea > * { 
     width: 100%;
   height: 290px;
   }
   
 @media (min-width: 568px) {
-  .StartScreen > .layoutFlow > .state0_elTextarea {
+  .StartScreen > .layoutFlow > .elTextarea {
     position: relative;
     margin-top: 0px;
     margin-left: 4px;
     margin-right: 4px;
     width: calc(100.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .state0_elTextarea > * { 
+  .StartScreen > .layoutFlow > .elTextarea > * { 
     width: 100%;
   height: 290px;
   }
   
 }
 @media (min-width: 768px) {
-  .StartScreen > .layoutFlow > .state0_elTextarea {
+  .StartScreen > .layoutFlow > .elTextarea {
     position: relative;
     margin-top: 0px;
     margin-left: 4px;
     margin-right: 4px;
     width: calc(100.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .state0_elTextarea > * { 
+  .StartScreen > .layoutFlow > .elTextarea > * { 
     width: 100%;
   height: 288px;
   }
   
 }
 @media (min-width: 1024px) {
-  .StartScreen > .layoutFlow > .state0_elTextarea {
+  .StartScreen > .layoutFlow > .elTextarea {
     position: relative;
     margin-top: 0px;
     margin-left: 4px;
     margin-right: 4px;
     width: calc(100.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .state0_elTextarea > * { 
+  .StartScreen > .layoutFlow > .elTextarea > * { 
     width: 100%;
   height: 288px;
   }
   
 }
 
-.StartScreen .state0_elButton button {
+.StartScreen .elButton button {
   cursor: pointer;
   border: 0.0px solid transparent;
   border-radius: 3.4px;
 }
 
-.StartScreen .state0_elButton button:focus {
+.StartScreen .elButton button:focus {
   box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
   outline: none;
 }
@@ -463,7 +463,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .StartScreen > .layoutFlow > .state0_elButton {
+  .StartScreen > .layoutFlow > .elButton {
     line-height: 35px;
     position: relative;
     margin-top: 12px;
@@ -471,13 +471,13 @@
     margin-right: 50.7%;
     width: calc(49.3% - 4px);
   }
-  .StartScreen > .layoutFlow > .state0_elButton > * { 
+  .StartScreen > .layoutFlow > .elButton > * { 
     width: 100%;
   height: 35px;
   }
   
 @media (min-width: 568px) {
-  .StartScreen > .layoutFlow > .state0_elButton {
+  .StartScreen > .layoutFlow > .elButton {
     line-height: 35px;
     position: relative;
     margin-top: 12px;
@@ -485,14 +485,14 @@
     margin-right: 50.4%;
     width: calc(49.6% - 4px);
   }
-  .StartScreen > .layoutFlow > .state0_elButton > * { 
+  .StartScreen > .layoutFlow > .elButton > * { 
     width: 100%;
   height: 35px;
   }
   
 }
 @media (min-width: 768px) {
-  .StartScreen > .layoutFlow > .state0_elButton {
+  .StartScreen > .layoutFlow > .elButton {
     line-height: 35px;
     position: relative;
     margin-top: 12px;
@@ -500,14 +500,14 @@
     margin-right: 50.3%;
     width: calc(49.7% - 4px);
   }
-  .StartScreen > .layoutFlow > .state0_elButton > * { 
+  .StartScreen > .layoutFlow > .elButton > * { 
     width: 100%;
   height: 35px;
   }
   
 }
 @media (min-width: 1024px) {
-  .StartScreen > .layoutFlow > .state0_elButton {
+  .StartScreen > .layoutFlow > .elButton {
     line-height: 35px;
     position: relative;
     margin-top: 12px;
@@ -515,20 +515,20 @@
     margin-right: 50.2%;
     width: calc(49.8% - 4px);
   }
-  .StartScreen > .layoutFlow > .state0_elButton > * { 
+  .StartScreen > .layoutFlow > .elButton > * { 
     width: 100%;
   height: 35px;
   }
   
 }
 
-.StartScreen .state0_elButton2 button {
+.StartScreen .elButton2 button {
   cursor: pointer;
   border: 0.0px solid transparent;
   border-radius: 3.4px;
 }
 
-.StartScreen .state0_elButton2 button:focus {
+.StartScreen .elButton2 button:focus {
   box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
   outline: none;
 }
@@ -536,7 +536,7 @@
 
 
 /* Narrowest size for this element's responsive layout */
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 {
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 {
     line-height: 35px;
     position: absolute;
     margin-top: -35px;
@@ -544,16 +544,16 @@
     margin-right: 4px;
     width: calc(50.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 > * { 
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 > * { 
     width: 100%;
   height: 35px;
   }
   
-  .flowRow_StartScreen_state0_elButton2_1046795 { 
+  .flowRow_StartScreen_elButton2_1046795 { 
   }
   
 @media (min-width: 568px) {
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 {
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 {
     line-height: 35px;
     position: absolute;
     margin-top: -35px;
@@ -561,17 +561,17 @@
     margin-right: 4px;
     width: calc(50.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 > * { 
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 > * { 
     width: 100%;
   height: 35px;
   }
   
-  .flowRow_StartScreen_state0_elButton2_1046795 { 
+  .flowRow_StartScreen_elButton2_1046795 { 
   }
   
 }
 @media (min-width: 768px) {
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 {
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 {
     line-height: 35px;
     position: absolute;
     margin-top: -35px;
@@ -579,17 +579,17 @@
     margin-right: 4px;
     width: calc(50.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 > * { 
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 > * { 
     width: 100%;
   height: 35px;
   }
   
-  .flowRow_StartScreen_state0_elButton2_1046795 { 
+  .flowRow_StartScreen_elButton2_1046795 { 
   }
   
 }
 @media (min-width: 1024px) {
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 {
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 {
     line-height: 35px;
     position: absolute;
     margin-top: -35px;
@@ -597,109 +597,60 @@
     margin-right: 4px;
     width: calc(50.0% - 9px);
   }
-  .StartScreen > .layoutFlow > .flowRow > .state0_elButton2 > * { 
+  .StartScreen > .layoutFlow > .flowRow > .elButton2 > * { 
     width: 100%;
   height: 35px;
   }
   
-  .flowRow_StartScreen_state0_elButton2_1046795 { 
+  .flowRow_StartScreen_elButton2_1046795 { 
   }
   
 }
 
 
 /* Narrowest size for this element's responsive layout */
-  .StartScreen > .layoutFlow > .state0_elPicker529318 {
+  .StartScreen > .layoutFlow > .elPicker {
     position: relative;
     margin-top: 39px;
     width: 181px;
     margin-left: calc(50.0% - 91px);
   }
-  .StartScreen > .layoutFlow > .state0_elPicker529318 > * { 
+  .StartScreen > .layoutFlow > .elPicker > * { 
   width: 181px;
   }
   
 @media (min-width: 568px) {
-  .StartScreen > .layoutFlow > .state0_elPicker529318 {
+  .StartScreen > .layoutFlow > .elPicker {
     position: relative;
     margin-top: 39px;
     width: 181px;
     margin-left: calc(50.0% - 91px);
   }
-  .StartScreen > .layoutFlow > .state0_elPicker529318 > * { 
+  .StartScreen > .layoutFlow > .elPicker > * { 
   width: 181px;
   }
   
 }
 @media (min-width: 768px) {
-  .StartScreen > .layoutFlow > .state0_elPicker529318 {
+  .StartScreen > .layoutFlow > .elPicker {
     position: relative;
     margin-top: 39px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
-  .StartScreen > .layoutFlow > .state0_elPicker529318 > * { 
+  .StartScreen > .layoutFlow > .elPicker > * { 
   width: 180px;
   }
   
 }
 @media (min-width: 1024px) {
-  .StartScreen > .layoutFlow > .state0_elPicker529318 {
+  .StartScreen > .layoutFlow > .elPicker {
     position: relative;
     margin-top: 39px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
-  .StartScreen > .layoutFlow > .state0_elPicker529318 > * { 
-  width: 180px;
-  }
-  
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .StartScreen > .layoutFlow > .state1_elPicker529318 {
-    position: relative;
-    margin-top: 39px;
-    width: 181px;
-    margin-left: calc(50.0% - 91px);
-  }
-  .StartScreen > .layoutFlow > .state1_elPicker529318 > * { 
-  width: 181px;
-  }
-  
-@media (min-width: 568px) {
-  .StartScreen > .layoutFlow > .state1_elPicker529318 {
-    position: relative;
-    margin-top: 39px;
-    width: 181px;
-    margin-left: calc(50.0% - 91px);
-  }
-  .StartScreen > .layoutFlow > .state1_elPicker529318 > * { 
-  width: 181px;
-  }
-  
-}
-@media (min-width: 768px) {
-  .StartScreen > .layoutFlow > .state1_elPicker529318 {
-    position: relative;
-    margin-top: 39px;
-    width: 180px;
-    margin-left: calc(50.0% - 90px);
-  }
-  .StartScreen > .layoutFlow > .state1_elPicker529318 > * { 
-  width: 180px;
-  }
-  
-}
-@media (min-width: 1024px) {
-  .StartScreen > .layoutFlow > .state1_elPicker529318 {
-    position: relative;
-    margin-top: 39px;
-    width: 180px;
-    margin-left: calc(50.0% - 90px);
-  }
-  .StartScreen > .layoutFlow > .state1_elPicker529318 > * { 
+  .StartScreen > .layoutFlow > .elPicker > * { 
   width: 180px;
   }
   

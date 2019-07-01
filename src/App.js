@@ -18,7 +18,8 @@ export default class App extends Component {
     this.dataSlots = {};
     this.dataSlots['ds_activeLang'] = "en";
     this.dataSlots['ds_Slot'] = "kvhgj";
-    this.dataSlots['ds_fontSIze'] = "72px";
+    this.dataSlots['ds_fontSIze'] = "";
+    this.dataSlots['ds_selectedFont'] = "";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -175,6 +176,7 @@ export default class App extends Component {
         'ds_activeLang': this.dataSlots['ds_activeLang'],
         'ds_Slot': this.dataSlots['ds_Slot'],
         'ds_fontSIze': this.dataSlots['ds_fontSIze'],
+        'ds_selectedFont': this.dataSlots['ds_selectedFont'],
       };
       switch (screenId) {
         default:

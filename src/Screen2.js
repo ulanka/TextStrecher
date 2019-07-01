@@ -51,7 +51,7 @@ export default class Screen2 extends Component {
       //
       // var exampleValue="foo";
       // this.props.appActions.updateDataSlot('ds_Example', exampleValue);
-      input  = '"fontSize": "'+this.props.appActions.dataSlots['ds_fontSIze']+'"';
+      input  = '"fontSize": "'+this.props.appActions.dataSlots['ds_selectedFont']+'"';
       //input  = '"fontSize": "72px"';
       
       return input;
@@ -60,7 +60,7 @@ export default class Screen2 extends Component {
         color: 'rgba(0, 0, 0, 0.8500)',
         textAlign: 'left',
         ...(() => {  // append customCSS property of 'text'
-          let val = transformCustomCSSPropValue_text((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_fontSIze'] : ''));
+          let val = transformCustomCSSPropValue_text((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_selectedFont'] : ''));
           if (val == null || val.length == 0) return null;
           try {
             return JSON.parse('{'+val+'}');
