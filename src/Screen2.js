@@ -57,6 +57,8 @@ export default class Screen2 extends Component {
       return input;
     }
     const style_elText = {
+        fontSize: 15.1,
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif',
         color: 'rgba(0, 0, 0, 0.8500)',
         textAlign: 'left',
         ...(() => {  // append customCSS property of 'text'
@@ -84,7 +86,7 @@ export default class Screen2 extends Component {
         </div>
         <div className="layoutFlow" style={layoutFlowStyle}>
           <div className='elText'>
-            <div className='baseFont' style={style_elText}>
+            <div className='' style={style_elText}>
               <div>{value_text !== undefined ? value_text : (<span className="propValueMissing">{this.props.locStrings.screen2_text_938607}</span>)}</div>
             </div>
           
