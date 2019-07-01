@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// UI framework component imports
+import Button from 'muicss/lib/react/button';
+
 
 export default class Screen2 extends Component {
 
   // Properties used by this component:
   // appActions, deviceInfo
 
+  onClick_elButton = (ev) => {
+    // Go back in screen navigation history
+    this.props.appActions.goBack();
+  
+  }
+  
+  
   render() {
     // eslint-disable-next-line no-unused-vars
     let baseStyle = {};
@@ -74,6 +84,15 @@ export default class Screen2 extends Component {
      };
     const value_text = (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_Slot'] : '');
     
+    const style_elButton = {
+        display: 'block',
+        color: 'white',
+        textAlign: 'center',
+     };
+    const style_elButton_outer = {
+        cursor: 'pointer',
+        pointerEvents: 'auto',
+     };
     
     return (
       <div className="AppScreen Screen2" style={baseStyle}>
@@ -89,6 +108,13 @@ export default class Screen2 extends Component {
             <div className='' style={style_elText}>
               <div>{value_text !== undefined ? value_text : (<span className="propValueMissing">{this.props.locStrings.screen2_text_938607}</span>)}</div>
             </div>
+          
+          </div>
+          
+          <div className='elButton' style={style_elButton_outer}>
+            <Button className='actionFont' style={style_elButton}  color="accent" onClick={this.onClick_elButton} >
+              {this.props.locStrings.screen2_button_667176}
+            </Button>
           
           </div>
           

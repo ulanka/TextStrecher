@@ -354,6 +354,75 @@
   
 }
 
+.Screen2 .elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Screen2 .elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Screen2 > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 28px;
+    width: 145px;
+    margin-left: calc(50.0% - 72px);
+  }
+  .Screen2 > .layoutFlow > .elButton > * { 
+  width: 145px;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .Screen2 > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 28px;
+    width: 145px;
+    margin-left: calc(50.0% - 72px);
+  }
+  .Screen2 > .layoutFlow > .elButton > * { 
+  width: 145px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Screen2 > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 28px;
+    width: 144px;
+    margin-left: calc(50.0% - 72px);
+  }
+  .Screen2 > .layoutFlow > .elButton > * { 
+  width: 144px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Screen2 > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 28px;
+    width: 144px;
+    margin-left: calc(50.0% - 72px);
+  }
+  .Screen2 > .layoutFlow > .elButton > * { 
+  width: 144px;
+  height: 35px;
+  }
+  
+}
+
 
 /* Narrowest size for this element's responsive layout */
   .StartScreen > .background > .elBackground {

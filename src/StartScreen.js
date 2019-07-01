@@ -16,14 +16,21 @@ export default class StartScreen extends Component {
     super(props);
     
     this.state = {
-      textarea: '',
-      picker: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_fontSIze'] : ''),
+      textarea: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_Text'] : '') || '',
+      picker: (this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_selectedFont'] : ''),
     };
   }
 
   textAreaChanged_textarea = (event) => {
     this.setState({textarea: event.target.value});
+    this.props.appActions.updateDataSlot("ds_Text", event.target.value);
   }
+  
+  onClick_elButton = (ev) => {
+    navigator.clipboard.readText().then(text => this.value = text);
+  
+  }
+  
   
   onClick_elButton2 = (ev) => {
     let newVal = this.state.textarea;
@@ -67,6 +74,7 @@ export default class StartScreen extends Component {
         paddingLeft: '1rem',
         boxSizing: 'border-box', // ensures padding won't expand element's outer size
      };
+    const value_textarea = this.state.textarea;
     
     const style_elTextarea_outer = {
         pointerEvents: 'auto',
@@ -75,6 +83,10 @@ export default class StartScreen extends Component {
         display: 'block',
         color: 'white',
         textAlign: 'center',
+     };
+    const style_elButton_outer = {
+        cursor: 'pointer',
+        pointerEvents: 'auto',
      };
     const style_elButton2 = {
         display: 'block',
@@ -106,12 +118,12 @@ export default class StartScreen extends Component {
         </div>
         <div className="layoutFlow" style={layoutFlowStyle}>
           <div className='elTextarea' style={style_elTextarea_outer}>
-            <textarea className='baseFont' style={style_elTextarea}  placeholder={this.props.locStrings.start_textarea_503126} onChange={this.textAreaChanged_textarea} value={this.state.textarea}  />
+            <textarea className='baseFont' style={style_elTextarea}  placeholder={this.props.locStrings.start_textarea_503126} onChange={this.textAreaChanged_textarea} value={value_textarea !== undefined ? value_textarea : ''}  />
           
           </div>
           
-          <div className='elButton'>
-            <Button className='actionFont' style={style_elButton}  color="accent" >
+          <div className='elButton' style={style_elButton_outer}>
+            <Button className='actionFont' style={style_elButton}  color="accent" onClick={this.onClick_elButton} >
               {this.props.locStrings.start_button_476009}
             </Button>
           

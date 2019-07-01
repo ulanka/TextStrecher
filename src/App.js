@@ -19,7 +19,8 @@ export default class App extends Component {
     this.dataSlots['ds_activeLang'] = "en";
     this.dataSlots['ds_Slot'] = "kvhgj";
     this.dataSlots['ds_fontSIze'] = "";
-    this.dataSlots['ds_selectedFont'] = "";
+    this.dataSlots['ds_selectedFont'] = localStorage.getItem('ds_selectedFont') || "24px";
+    this.dataSlots['ds_Text'] = localStorage.getItem('ds_Text') || "";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -143,6 +144,12 @@ export default class App extends Component {
     if (slotId === 'ds_activeLang') {
       this.locStrings.setLanguage(value);
     }
+    if (slotId === 'ds_selectedFont') {
+      localStorage.setItem('ds_selectedFont', value);
+    }
+    if (slotId === 'ds_Text') {
+      localStorage.setItem('ds_Text', value);
+    }
     this.setState({});
   }
 
@@ -177,6 +184,7 @@ export default class App extends Component {
         'ds_Slot': this.dataSlots['ds_Slot'],
         'ds_fontSIze': this.dataSlots['ds_fontSIze'],
         'ds_selectedFont': this.dataSlots['ds_selectedFont'],
+        'ds_Text': this.dataSlots['ds_Text'],
       };
       switch (screenId) {
         default:
